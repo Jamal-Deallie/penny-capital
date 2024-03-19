@@ -1,33 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* media-queries */
+  @media (min-width: 800px) {
+    --viewport-w: 1366;
+    --nav-height: 70;
   }
+
+  @media (max-width: 800px) {
+    --viewport-w: 375;
+    --nav-height: 65;
+  }
+  /* media-queries */
+
+  /* colors */
+  --primary: 33 83% 93%;
+  --primary-foreground: 280 8% 14%;
+  --secondary: 280 8% 14%;
+  --secondary-foreground: 33 83% 93%;
+  --accent: 22 39% 47%;
+  /* colors */
+
+  /* font */
+  --lh: calc(2px + 2ex + 2px);
+  /* font */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  .title-xl {
+    @apply text-6xl lg:text-10xl font-heading;
+  }
+  .title-lg {
+    @apply text-3xl lg:leading-none lg:text-9xl font-heading;
+  }
+  .title-md {
+    @apply text-4xl leading-none lg:text-5xl font-heading;
+  }
+  .title-sm {
+    @apply text-2xl leading-none lg:text-4xl font-heading;
+  }
+  .title-xs {
+    @apply text-xl leading-none lg:text-2xl font-heading;
+  }
+  .grid-inner {
+    @apply grid grid-cols-12 gap-x-6 md:grid-cols-6;
+  }
+  .grid-block {
+    @apply grid grid-cols-12 md:grid-cols-6;
+  }
+  .main-text {
+    @apply text-lg lg:text-xl font-body;
+  }
+  p {
+    @apply font-body;
+  }
+  span {
+    @apply font-body;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .img-clip {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+} */

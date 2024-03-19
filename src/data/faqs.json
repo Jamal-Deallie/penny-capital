@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "What are your studio hours?",
+    "answer": "Our studio hours vary. Please check our website or contact us for the most up-to-date information on class schedules and operating hours."
+  },
+  {
+    "id": 2,
+    "question": "Do you offer memberships?",
+    "answer": "Yes, we offer memberships with various benefits such as unlimited access to classes, discounts on workshops, and more. Visit our studio or website for details."
+  },
+  {
+    "id": 3,
+    "question": "Can I attend classes if I'm a beginner?",
+    "answer": "Of course! Our classes are suitable for all levels, including beginners. Our instructors provide modifications and adjustments to accommodate different skill levels."
+  },
+  {
+    "id": 4,
+    "question": "Do you provide yoga mats?",
+    "answer": "Yes, we provide yoga mats and other props for your convenience. However, you're welcome to bring your own if you prefer."
+  },
+  {
+    "id": 5,
+    "question": "Are there parking facilities available?",
+    "answer": "Yes, we have parking facilities available for our customers. Please refer to our website or contact us for parking details and availability."
+  }
+]

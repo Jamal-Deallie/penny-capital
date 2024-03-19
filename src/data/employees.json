@@ -1,0 +1,60 @@
+
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "title": "Managing Partner",
+      "bio": "John is a seasoned investor with over two decades of experience in venture capital. He specializes in guiding startups from seed stage to successful exits.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "title": "Investment Associate",
+      "bio": "Jane brings a diverse background in finance and entrepreneurship to Penny Capital. She is passionate about identifying and nurturing promising startups.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "title": "Senior Analyst",
+      "bio": "Michael is an analytical thinker with a keen eye for market trends. He assists in due diligence and investment strategy, ensuring Penny Capital's portfolio stays strong.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "title": "Marketing Director",
+      "bio": "Emily is a creative marketing professional who specializes in branding and communication strategies. She helps startups refine their messaging and reach their target audience.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 5,
+      "name": "David Lee",
+      "title": "Finance Manager",
+      "bio": "David is a detail-oriented finance expert who ensures Penny Capital's financial operations run smoothly. He manages budgeting, forecasting, and financial reporting.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Wilson",
+      "title": "Operations Coordinator",
+      "bio": "Sarah is the backbone of Penny Capital's operations, handling administrative tasks and ensuring the office runs efficiently. Her organizational skills keep everything on track.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Daniel Garcia",
+      "title": "Technology Specialist",
+      "bio": "Daniel is a tech enthusiast with expertise in software development and IT infrastructure. He implements and maintains the technology systems that support Penny Capital's operations.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Jessica Clark",
+      "title": "HR Manager",
+      "bio": "Jessica is a people-focused HR professional who ensures Penny Capital attracts, retains, and develops top talent. She fosters a positive and inclusive work culture.",
+      "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710573939/penny_capital/smiling-mature-corporate-executive-wearing-a-shirt-2023-11-27-05-05-37-utc_b2mbeu.jpg"
+    }
+  ]
+  
