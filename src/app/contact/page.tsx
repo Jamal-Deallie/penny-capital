@@ -1,4 +1,6 @@
-import { ContactForm } from '@/components';
+import { ContactForm, RenderedMap, Skeleton } from '@/components';
+import Link from 'next/link';
+import { Suspense } from 'react';
 
 const ContactPage = () => {
   return (
@@ -36,30 +38,27 @@ const ContactPage = () => {
         <div className='lg:col-start-8 lg:col-end-13 lg:border-l border-accent lg:pl-10 col-span-full md:order-1'>
           <div className='flex flex-col gap-6 text-secondary-foreground lg:pt-14'>
             <div>
-              <h3 className='title-xs'>Address</h3>
-              <p className='text-base lg:text-lg mt-2'>
-                JOHN REED Dallas
-                <br />
-                8335 Westchester Drive, Suite 40, Dallas, TX 75225
-              </p>
-            </div>
-            <div>
               <h3 className='title-xs'>Contact</h3>
               <p className='text-base lg:text-lg mt-2'>
-                <a href='mailto:dallas@johnreed.fitness'>
-                  dallas@johnreed.fitness
-                </a>
+                <Link href='mailto:inquiry@pennycapital.com'>
+                  inquiry@pennycapital.com
+                </Link>
                 <br />
-                (214) 296-5050
+                (214) 123-4567
               </p>
             </div>
             <div>
-              <h3 className='title-xs'>Open</h3>
+              <h3 className='title-xs'>Address</h3>
               <p className='text-base lg:text-lg mt-2'>
-                Monday – Sunday
+                Penny Capital
                 <br />
-                5AM – 12AM
+                123 Main Drive, Dallas, TX 75225
               </p>
+            </div>
+            <div>
+              <Suspense fallback={<Skeleton className='aspect-video' />}>
+                <RenderedMap />
+              </Suspense>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import ContactForm from './ui/contact-form';
+import RenderedMap from './ui/map';
 export { default as GSAP } from './gsap';
 export { default as ScrollTriggerConfig } from './scroll-trigger';
 export { default as Footer } from './ui/footer';
@@ -36,3 +37,5 @@ export { default as About } from './containers/about';
 export { default as Stats } from './containers/stats';
 export { default as Awards } from './containers/awards';
 export { default as Team } from './containers/team';
+export { default as RenderedMap } from './ui/map';
+export {default as Skeleton} from './ui/skeleton';

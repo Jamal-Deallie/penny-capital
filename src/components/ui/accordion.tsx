@@ -23,7 +23,7 @@ export default function Accordion({
   return (
     <div
       className={cn(
-        'flex flex-col border-2 rounded-md hover:border-accent ease-out transition md:px-4 lg:px-4  duration-500 border-secondary-foreground',
+        'flex flex-col border-[1.75px] rounded-md hover:border-accent ease-out transition md:px-4 lg:px-4  duration-500 border-secondary-foreground',
         isOpen
           ? 'bg-accent border-accent'
           : 'bg-secondary text-secondary-foreground'

@@ -98,8 +98,8 @@ html.lenis {
   pointer-events: none;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
-} */
+}
