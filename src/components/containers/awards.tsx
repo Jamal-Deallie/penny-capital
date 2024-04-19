@@ -1,5 +1,6 @@
 import React from 'react';
-import awards from '@/data/awards.json';
+
+import { awardItems } from '@/data/awardItems';
 
 const Awards = () => {
   return (
@@ -10,7 +11,7 @@ const Awards = () => {
       </h1>
 
       <div className='col-span-full lg:col-start-5 lg:col-end-13 lg:pt-24 pt-16'>
-        {awards.map(award => {
+        {awardItems.map(award => {
           return (
             <div key={award.id} className='pb-6'>
               <div className='grid-cols-7 grid md:gap-1'>

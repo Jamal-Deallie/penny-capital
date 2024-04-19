@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import {useState } from 'react';
+
 import { Accordion } from '@/components';
-import Link from 'next/link';
-import { useStore } from '@/lib/store';
 
 interface FaqProps {
   question: string;
@@ -22,7 +21,7 @@ export default function AccordionGroup({ data }: AccordionProps) {
   };
 
   return (
-    <div className='pt-16 lg:pt-32 lg:col-start-3 lg:col-end-11 col-span-full'>
+    <div className='w-full'>
       <div className='[&>*:nth-child(even)]:my-10'>
         {data.map((item, index) => (
           <Accordion

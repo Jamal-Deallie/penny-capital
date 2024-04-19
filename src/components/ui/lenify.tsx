@@ -1,21 +1,22 @@
 'use client';
-import Tempus from '@studio-freight/tempus';
 import Lenis from '@studio-freight/lenis';
+import Tempus from '@studio-freight/tempus';
+import { usePathname } from 'next/navigation';
 import { useEffect, useLayoutEffect, useRef } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { ScrollTrigger, gsap } from '@/lib/gsap';
+
 import { useStore } from '@/lib/store';
+import { gsap, ScrollTrigger } from '@/utils/gsap';
 
 export default function Lenify() {
   const lenis = useRef<Lenis | null>(null);
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+
   const [navIsOpen] = useStore(({ navIsOpen }) => [navIsOpen]);
   const [setLenis] = useStore(state => [state.setLenis]);
 
   useEffect(() => {
     if (lenis.current) lenis.current!.scrollTo(0, { immediate: true });
-  }, [pathname, searchParams, lenis]);
+  }, [pathname, lenis]);
 
   useLayoutEffect(() => {
     lenis.current = new Lenis({

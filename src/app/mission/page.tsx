@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { nextImport } from '@/utils/nextImport';
 
 const { About, Stats, Awards } = {

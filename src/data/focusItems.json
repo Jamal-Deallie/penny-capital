@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "focus": "Education",
+    "description": "Investing in innovative educational technologies to enhance learning experiences and outcomes.",
+    "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1711941471/penny_capital/graduate-cap_kno56a.svg",
+    "className": "[&>*:last-child>span]:hidden"
+  },
+  {
+    "id": 2,
+    "focus": "Healthcare",
+    "description": "Supporting healthcare startups that aim to revolutionize patient care through technology.",
+    "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1711941466/penny_capital/health_xmbjrs.svg",
+    "className": "[&>*:last-child>span]:hidden"
+  },
+  {
+    "id": 3,
+    "focus": "Energy",
+    "description": "Funding clean energy initiatives to promote sustainability and reduce carbon footprint.",  "src": "https://res.cloudinary.com/dtwk4dm3g/image/upload/v1711941468/penny_capital/bolt-fill_dgmtxd.svg"
+  }
+]

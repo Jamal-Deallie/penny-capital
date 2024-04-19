@@ -4,7 +4,7 @@ import { cn } from '@/utils/cn';
 
 type SkeletonProps = React.ComponentPropsWithoutRef<'div'>;
 
-const Skeleton = ({ className, ...rest }: SkeletonProps) => {
+const Skeleton = ({ className }: SkeletonProps) => {
   return (
     <div
       className={cn(

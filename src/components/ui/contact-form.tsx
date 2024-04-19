@@ -3,16 +3,15 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 
-import { cn } from '@/utils/cn';
 import {
+  Button,
   Form,
   FormControl,
   FormField,
   FormItem,
+  FormLabel,
   FormMessage,
   Input,
-  FormLabel,
-  Button,
 } from '@/components';
 
 const accountFormSchema = z.object({
@@ -57,7 +56,7 @@ const ContactForm = () => {
   });
 
   function onSubmit(data: AccountFormValues) {
-    console.log(JSON.stringify(data, null, 2));
+    JSON.stringify(data, null, 2);
   }
 
   return (

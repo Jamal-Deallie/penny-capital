@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "question": "What are your studio hours?",
-    "answer": "Our studio hours vary. Please check our website or contact us for the most up-to-date information on class schedules and operating hours."
+    "question": "What is Penny Capital's investment philosophy?",
+    "answer": "Penny Capital invests in startups with transformative potential in Education, Healthcare, and Energy sectors."
   },
   {
     "id": 2,
-    "question": "Do you offer memberships?",
-    "answer": "Yes, we offer memberships with various benefits such as unlimited access to classes, discounts on workshops, and more. Visit our studio or website for details."
+    "question": "Which stages of companies does Penny Capital invest in?",
+    "answer": "Penny Capital typically invests in early-stage startups that show high growth potential and strong leadership."
   },
   {
     "id": 3,
-    "question": "Can I attend classes if I'm a beginner?",
-    "answer": "Of course! Our classes are suitable for all levels, including beginners. Our instructors provide modifications and adjustments to accommodate different skill levels."
+    "question": "How does Penny Capital support its portfolio companies?",
+    "answer": "Beyond funding, Penny Capital provides strategic guidance, networking opportunities, and operational support."
   },
   {
     "id": 4,
-    "question": "Do you provide yoga mats?",
-    "answer": "Yes, we provide yoga mats and other props for your convenience. However, you're welcome to bring your own if you prefer."
+    "question": "Can startups outside of Penny Capital's focus areas apply for funding?",
+    "answer": "While Penny Capital specializes in certain sectors, they consider exceptional startups outside these areas on a case-by-case basis."
   },
   {
     "id": 5,
-    "question": "Are there parking facilities available?",
-    "answer": "Yes, we have parking facilities available for our customers. Please refer to our website or contact us for parking details and availability."
+    "question": "What is the process for seeking investment from Penny Capital?",
+    "answer": "Startups seeking investment should prepare a pitch deck and executive summary and submit them through Penny Capital's official channels."
   }
 ]

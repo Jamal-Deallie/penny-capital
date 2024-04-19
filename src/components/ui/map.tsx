@@ -1,6 +1,7 @@
 'use client';
 
 import Map, { Marker } from 'react-map-gl';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { Icons } from '@/components';

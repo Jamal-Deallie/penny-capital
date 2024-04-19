@@ -1,7 +1,8 @@
 'use client';
-import { forwardRef } from 'react';
 import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
+import { forwardRef } from 'react';
+
 import { cn } from '@/utils/cn';
 
 export type NavLinkProps = LinkProps & {

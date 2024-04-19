@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "clientName": "Our Next Energy",
+    "description": "A Michigan-based energy company that may have received strategic investments from Penny Capital to accelerate its clean energy solutions."
+  },
+  {
+    "Id": 2,
+    "clientName": "Coalition",
+    "description": "A San Francisco-based cybersecurity firm potentially partnered with Penny Capital for funding its innovative security technologies."
+  },
+  {
+    "Id": 3,
+    "clientName": "Electric Hydrogen",
+    "description": "A company specializing in renewable energy, possibly backed by Penny Capital to support its growth in the hydrogen fuel sector."
+  },
+  {
+    "Id": 4,
+    "clientName": "Intersect Power",
+    "description": "An energy company that might collaborate with Penny Capital to expand its renewable energy projects across the nation."
+  },
+  {
+    "Id": 5,
+    "clientName": "Devoted Health",
+    "description": "A healthcare startup from Massachusetts which could have secured funding from Penny Capital to innovate healthcare services."
+  },
+  {
+    "Id": 6,
+    "clientName": "Cribl",
+    "description": "A business software service provider in San Francisco, potentially receiving Penny Capital's investment for its data pipeline solutions."
+  },
+  {
+    "Id": 7,
+    "clientName": "VAST Data",
+    "description": "A New York-based technology firm that may have Penny Capital as a key investor, supporting its data storage solutions."
+  },
+  {
+    "Id": 8,
+    "clientName": "Whatnot",
+    "description": "A retail company that could be leveraging Penny Capital's investment to revolutionize the collectibles marketplace."
+  },
+  {
+    "Id": 9,
+    "clientName": "Hightouch",
+    "description": "A San Francisco-based company potentially using Penny Capital's funding to enhance its customer data platform."
+  },
+  {
+    "Id": 10,
+    "clientName": "Lunar Energy",
+    "description": "An energy sector startup that might be in partnership with Penny Capital to fund its lunar energy research and development."
+  }
+]

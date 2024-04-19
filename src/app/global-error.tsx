@@ -1,10 +1,25 @@
-'use client';
+'use client'; // Error components must be Client Components
 
-export default function Error() {
+import * as React from 'react';
+
+export default function Error({
+  error,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  React.useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.error(error);
+  }, [error]);
+
   return (
-    <div>
-      <h1 className='title-lg'>Something went wrong.</h1>
-      <button>Try again</button>
-    </div>
+    <main>
+      <section className='bg-white'>
+        <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
+          <h1>Something Went Wrong</h1>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -50,10 +50,10 @@
     @apply text-xl leading-none lg:text-2xl font-heading;
   }
   .grid-inner {
-    @apply grid grid-cols-12 gap-x-6 md:grid-cols-6;
+    @apply grid grid-cols-12 lg:gap-x-6 gap-x-4 md:grid-cols-6;
   }
   .grid-block {
-    @apply grid grid-cols-12 md:grid-cols-6;
+    @apply grid grid-cols-12 md:grid-cols-6 lg:gap-x-6 gap-x-4;
   }
   .main-text {
     @apply text-lg lg:text-xl font-body;
@@ -69,6 +69,12 @@
 @layer utilities {
   .img-clip {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  .clip-full {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .img-filter {
+    filter: grayscale(1) sepia(0.4) contrast(0.85);
   }
   .line-clamp-3 {
     display: -webkit-box;

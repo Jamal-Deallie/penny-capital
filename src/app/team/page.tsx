@@ -1,8 +1,17 @@
-import React from 'react';
-import employees from '@/data/employees.json';
+import React, { Suspense } from 'react';
+
+import { employeeItems } from '@/data';
+
 import { TeamCard } from '@/components';
 
 const TeamPage = () => {
+  const departments: string[] = employeeItems.map(
+    ({ department }) => department
+  );
+  const uniqueDepartments = departments.filter(
+    (department, index) => departments.indexOf(department) === index
+  );
+
   return (
     <main className='bg-primary px-4 lg:px-10 pb-16 lg:pb-24 min-h-screen-height pt-nav-height'>
       <div className='py-16 grid-inner relative'>
@@ -52,63 +61,36 @@ const TeamPage = () => {
               </header>
 
               <ul className='space-y-1 border-t border-primary-foreground p-4'>
-                <li>
-                  <label
-                    htmlFor='FilterInStock'
-                    className='inline-flex items-center gap-2'>
-                    <input
-                      type='checkbox'
-                      id='FilterInStock'
-                      className='size-5 rounded border-primary-foreground bg-primary'
-                    />
+                {uniqueDepartments.map(department => (
+                  <li key={department}>
+                    <label
+                      htmlFor={department}
+                      className='inline-flex items-center gap-2'>
+                      <input
+                        type='checkbox'
+                        id={department}
+                        className='size-5 rounded border-primary-foreground bg-primary'
+                      />
 
-                    <span className='main-text text-primary-foreground'>
-                      {' '}
-                      In Stock (5+){' '}
-                    </span>
-                  </label>
-                </li>
-
-                <li>
-                  <label
-                    htmlFor='FilterPreOrder'
-                    className='inline-flex items-center gap-2 main-text'>
-                    <input
-                      type='checkbox'
-                      id='FilterPreOrder'
-                      className='size-5 rounded border-primary-foreground bg-primary'
-                    />
-
-                    <span className='main-text'> Pre Order (3+) </span>
-                  </label>
-                </li>
-
-                <li>
-                  <label
-                    htmlFor='FilterOutOfStock'
-                    className='inline-flex items-center gap-2'>
-                    <input
-                      type='checkbox'
-                      id='FilterOutOfStock'
-                      className='size-5 rounded border-primary-foreground bg-primary'
-                    />
-
-                    <span className='main-text text-primary-foreground'>
-                      {' '}
-                      Out of Stock (10+){' '}
-                    </span>
-                  </label>
-                </li>
+                      <span className='main-text text-primary-foreground'>
+                        {' '}
+                        {department}{' '}
+                      </span>
+                    </label>
+                  </li>
+                ))}
               </ul>
             </div>
           </details>
         </div>
       </div>
-      <div className='grid-inner relative'>
-        {employees.map(({ id, ...employee }) => {
-          return <TeamCard key={id} {...employee} />;
-        })}
-      </div>
+      <Suspense>
+        <div className='grid-inner relative gap-y-8'>
+          {employeeItems.map(({ id, ...employee }) => {
+            return <TeamCard key={id} {...employee} />;
+          })}
+        </div>
+      </Suspense>
     </main>
   );
 };

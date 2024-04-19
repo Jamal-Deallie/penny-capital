@@ -1,18 +1,24 @@
-import React from 'react';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-type Props = {};
+import { useImageRevealAnime } from '@/hooks';
 
-const TeamIntro = (props: Props) => {
+const TeamIntro = () => {
+  const imageRef = useImageRevealAnime();
   return (
-    <div className='grid-inner py-16 lg:py-24 px-4 lg:px-10'>
+    <div
+      className='grid-inner py-16 lg:py-24 px-4 lg:px-10 lg:gap-y-10'
+      ref={imageRef}>
       <div className='title-lg lg:col-span-6 col-span-full flex flex-col'>
-        <h1 className='title-lg'>A wonderful serenity has</h1>
+        <h1 className='title-lg'>
+          Our Team Values Innovation and Collaboration
+        </h1>
         <p className='text-base lg:text-lg font-body pt-8'>
-          Consider now provided laughter boy landlord dashwood. Often voice and
-          the spoke. No shewing fertile village equally prepare up females as
-          an. That do a case a what plan hour of paid. Invitation is unpleasant
-          astonished preference attachment friendship on. Did sentiments
+          Our team of dedicated professionals are driven by innovation and
+          collaboration. Our culture fosters growth, encourages creative
+          problem-solving, and values strong relationships. We are committed to
+          empowering the future of Education, Healthcare, and Energy sectors
+          through strategic investments.
         </p>
         <div className='w-fit overflow-hidden'>
           <Link
@@ -23,40 +29,40 @@ const TeamIntro = (props: Props) => {
           </Link>
         </div>
       </div>
-      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:mt-16'>
+      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:mt-16 img-target'>
         <Image
           className='object-cover w-full h-auto'
-          src='https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710566366/penny_capital/airone_shot-of-a-group-of-businessmen-having-a-meeting-ar-2023-11-27-05-26-47-utc_vy4wad.jpg'
+          src='/images/this-is-going-to-be-a-difficult-one.webp'
           alt='Penny Capital Business People Meeting or Clapping in Digital Marketing Seminar'
           width={0}
           height={0}
           sizes='100vw'
         />
       </figure>
-      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:mt-16'>
+      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:mt-16 img-target'>
         <Image
           className='object-cover w-full h-auto'
-          src='https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710566366/penny_capital/airone_shot-of-a-group-of-businessmen-having-a-meeting-ar-2023-11-27-05-26-47-utc_vy4wad.jpg'
+          src='/images/one-team-committed-to-the-dream-portrait.webp'
           alt='Penny Capital Business People Meeting or Clapping in Digital Marketing Seminar'
           width={0}
           height={0}
           sizes='100vw'
         />
       </figure>
-      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:hidden'>
+      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:hidden img-target'>
         <Image
           className='object-cover w-full h-auto'
-          src='https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710566366/penny_capital/airone_shot-of-a-group-of-businessmen-having-a-meeting-ar-2023-11-27-05-26-47-utc_vy4wad.jpg'
+          src='/images/everyones-input-is-valuable.webp'
           alt='Penny Capital Business People Meeting or Clapping in Digital Marketing Seminar'
           width={0}
           height={0}
           sizes='100vw'
         />
       </figure>
-      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:hidden'>
+      <figure className='h-auto aspect-square relative overflow-hidden col-span-3 md:hidden img-target'>
         <Image
           className='object-cover w-full h-auto'
-          src='https://res.cloudinary.com/dtwk4dm3g/image/upload/v1710566366/penny_capital/airone_shot-of-a-group-of-businessmen-having-a-meeting-ar-2023-11-27-05-26-47-utc_vy4wad.jpg'
+          src='/images/high-angle-shot-of-a-group-of-businesspeople.webp'
           alt='Penny Capital Business People Meeting or Clapping in Digital Marketing Seminar'
           width={0}
           height={0}

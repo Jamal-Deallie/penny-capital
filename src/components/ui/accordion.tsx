@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+
 import { cn } from '@/utils/cn';
 
 import { Icons } from '@/components';
@@ -57,7 +58,7 @@ export default function Accordion({
             : { maxHeight: '0px' }
         }>
         <div className='pb-10 pt-2'>
-          <p className='text-base lg:text-lg font-body'>{answer}</p>
+          <p className='text-base lg:text-lg font-body text-secondary'>{answer}</p>
         </div>
       </div>
     </div>

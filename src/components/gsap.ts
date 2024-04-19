@@ -1,10 +1,11 @@
 'use client';
 
 import Tempus from '@studio-freight/tempus';
-import { useLenis } from '@/components/lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useEffect, useLayoutEffect } from 'react';
+
+import { useLenis } from '@/components/lenis';
 
 const GSAP = () => {
   useLayoutEffect(() => {

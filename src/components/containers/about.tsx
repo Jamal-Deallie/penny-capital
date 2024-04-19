@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 const About = () => {
   return (
     <section className='pt-16 lg:pb-24 pb-16'>

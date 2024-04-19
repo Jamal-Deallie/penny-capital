@@ -1,7 +1,9 @@
-import { NavLink } from '@/components';
-import { siteConfig } from '@/constants/config';
 import Link from 'next/link';
+
+import { NavLink } from '@/components';
 import { Icons } from '@/components';
+
+import { siteConfig } from '@/constants/config';
 
 const Footer = () => {
   return (
@@ -14,9 +16,9 @@ const Footer = () => {
           </span>
         </div>
 
-        <p className='mx-auto mt-6 max-w-md text-center leading-relaxed'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+        <p className='mx-auto mt-6 max-w-md text-center leading-relaxed text-lg'>
+          Penny Capital: Strategic investments in transformative startups
+          shaping education, healthcare, and sustainable energy futures.
         </p>
 
         <ul className='mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 text-secondary-foreground'>

@@ -5,7 +5,7 @@ export default {
   theme: {
     screens: {
       lg: { min: '800px' },
-      md: { max: '800px' },
+      md: { max: '799px' },
     },
     fontSize: {
       sm: ['calc(12 * (100vw / var(--viewport-w)))', 'var(--lh)'],
@@ -19,7 +19,7 @@ export default {
       '6xl': 'calc(52.04 * (100vw / var(--viewport-w)))',
       '7xl': 'calc(67.36  * (100vw / var(--viewport-w)))',
       '8xl': 'calc(76 * (100vw / var(--viewport-w)))',
-      '9xl': 'calc(80 * (100vw / var(--viewport-w)))',
+      '9xl': 'calc(70 * (100vw / var(--viewport-w)))',
       '10xl': 'calc(120 * (100vw / var(--viewport-w)))',
     },
     spacing: {
@@ -106,9 +106,21 @@ export default {
             transform: 'translateX(100%)',
           },
         },
+        slidein: {
+          from: {
+            transform: 'translateY(120%)',
+            opacity: '0',
+          },
+          to: {
+            transform: 'translateY(0%)',
+            opacity: '1',
+          },
+          animation: {
+            slidein: 'slidein 2s ease var(--slidein-delay, 0) forwards',
+          },
+        },
       },
     },
   },
   plugins: [require('@tailwindcss/forms')],
 } satisfies Config;
-

@@ -1,5 +1,5 @@
-import { create } from 'zustand';
 import Lenis from '@studio-freight/lenis';
+import { create } from 'zustand';
 type State = {
   navIsOpen: boolean;
   lenis: undefined | Lenis;

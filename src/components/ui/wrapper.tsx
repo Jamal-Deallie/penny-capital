@@ -1,21 +1,16 @@
-import { SiteHeader, Lenify, Footer, GSAP } from '@/components';
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 
-const Wrapper = ({
-  children,
-  lenisOptions,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-  lenisOptions?: {};
-}) => {
+import { Footer, Lenify, SiteHeader } from '@/components';
+
+const Wrapper = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <Lenify />
+      <Suspense>
+        <Lenify />
+      </Suspense>
       <div>
         <SiteHeader />
-        {children}
+        <Suspense>{children}</Suspense>
         <Footer />
       </div>
     </>

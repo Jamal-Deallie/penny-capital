@@ -1,6 +1,7 @@
-import { ContactForm, RenderedMap, Skeleton } from '@/components';
 import Link from 'next/link';
 import { Suspense } from 'react';
+
+import { ContactForm, RenderedMap, Skeleton } from '@/components';
 
 const ContactPage = () => {
   return (

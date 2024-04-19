@@ -1,7 +1,5 @@
 import React from 'react';
 
-type Props = {};
-
 const Stats = () => {
   return (
     <section className='py-16 lg:py-24'>
